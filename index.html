@@ -1,1 +1,18 @@
-Yeo Man!
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>Metro Area</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="author" content="https://www.fiverr.com/urright">
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"  crossorigin=""></script>	
+</head>
+<body>
+<div id="mapid" style="width: auto; height: 1000px;"></div>
+<script>
+	var mymap=L.map("mapid").setView([37.8,-96],5);L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",{maxZoom:18,id:"mapbox/light-v10",tileSize:512,zoomOffset:-1}).addTo(mymap),L.marker([40.654537,-73.949813]).addTo(mymap).bindPopup("Kings County"),L.marker([40.721745,-73.819703]).addTo(mymap).bindPopup("Queens County"),L.marker([40.792138,-73.962732]).addTo(mymap).bindPopup("New York County"),L.marker([40.853976,-73.870462]).addTo(mymap).bindPopup("Bronx County"),L.marker([40.584143,-74.145104]).addTo(mymap).bindPopup("Richmond County"),L.marker([41.194189,-73.778351]).addTo(mymap).bindPopup("Westchester County"),L.marker([40.962235,-74.065414]).addTo(mymap).bindPopup("Bergen County"),L.marker([40.738821,-74.064158]).addTo(mymap).bindPopup("Hudson County"),L.marker([41.018342,-74.299382]).addTo(mymap).bindPopup("Passaic County"),L.marker([41.427962,-73.737108]).addTo(mymap).bindPopup("Putnam County"),L.marker([41.154143,-74.053282]).addTo(mymap).bindPopup("Rockland County"),L.marker([40.856602,-72.909501]).addTo(mymap).bindPopup("Suffolk County"),L.marker([40.736731,-73.582533]).addTo(mymap).bindPopup("Nassau County"),L.marker([40.419474,-74.41965]).addTo(mymap).bindPopup("Middlesex County"),L.marker([40.275809,-74.201265]).addTo(mymap).bindPopup("Monmouth County"),L.marker([39.933043,-74.312854]).addTo(mymap).bindPopup("Ocean County"),L.marker([40.538733,-74.631462]).addTo(mymap).bindPopup("Somerset County"),L.marker([40.790792,-74.263014]).addTo(mymap).bindPopup("Essex County"),L.marker([40.665545,-74.302089]).addTo(mymap).bindPopup("Union County"),L.marker([40.869497,-74.528793]).addTo(mymap).bindPopup("Morris County"),L.marker([41.155866,-74.685858]).addTo(mymap).bindPopup("Sussex County"),L.marker([40.57268,-74.92418]).addTo(mymap).bindPopup("Hunterdon County"),L.marker([41.33544,-75.084594]).addTo(mymap).bindPopup("Pike County"),L.marker([37.628749,-121.88171]).addTo(mymap).bindPopup("Alameda County"),L.marker([37.925172,-121.904109]).addTo(mymap).bindPopup("Contra Costa County"),L.marker([37.751436,-122.448589]).addTo(mymap).bindPopup("San Francisco"),L.marker([37.438628,-122.343102]).addTo(mymap).bindPopup("San Mateo County"),L.marker([38.103217,-122.734159]).addTo(mymap).bindPopup("Marin County"),L.marker([42.159351,-71.24189]).addTo(mymap).bindPopup("Norfolk County"),L.marker([41.960943,-70.858137]).addTo(mymap).bindPopup("Plymouth County"),L.marker([42.34144,-71.07753]).addTo(mymap).bindPopup("Suffolk County"),L.marker([42.700738,-70.969795]).addTo(mymap).bindPopup("Essex County"),L.marker([42.504803,-71.37155]).addTo(mymap).bindPopup("Middlesex County"),L.marker([43.007562,-71.153312]).addTo(mymap).bindPopup("Rockingham County"),L.marker([43.286419,-71.061423]).addTo(mymap).bindPopup("Strafford County"),L.marker([34.454599,-118.381691]).addTo(mymap).bindPopup("Los Angeles County"),L.marker([33.722715,-117.750257]).addTo(mymap).bindPopup("Orange County");
+</script>
+</body>
+</html>
